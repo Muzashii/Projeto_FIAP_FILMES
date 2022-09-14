@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+
+:root{
+    --bg-primary: #111;
+    --bg-secundary: #2d2d2d;
+    --default: #fff;
+    --destak: #f06;
+    --font-primary: 'Roboto', sans-serif;
+    --font-header: 'Bebas Neue', cursive;
+    --font-hero: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+.hero{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    position: relative; 
+    font-family: var(--font-hero);
+}
+
+.img-hero{
+    width: 20%;
+    margin: 40px;
+}
+
+.img-hero img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.hero h1{
+    font-size: 40px;
+    letter-spacing: 0.04em;
+    text-shadow: 0px 4px 4px #000;
+}
+
+.hero section{
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.hero::before{
+    content: '';
+    height: 80vh;
+    width: 100%;
+    background-image:url("https://www.themoviedb.org/t/p/original/5AcP07WJl1VZbnloLZrMVgYjR2s.jpg");
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: opacity(.5);
+    box-shadow: inset 0 -100px 100px var(--bg-primary);
+}
+
+.text-hero{
+    width: 80%;
+    margin: 40px 40px 40px 0px;
+}
+
+.titulo-hero{
+    padding-bottom: 40px;
+}
+
+.subtitulo-hero{
+    width: 80%;
+}
+
+.container{ 
+    display: flex;
+    margin: 40px;
+}
+
+.box-elenco{
+    width: 80%;
+}
+
+.buttons-container{
+    display: flex;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background-color: var(--destak);
+    padding: 5px 40px;
+    margin-right: 20px;
+    border-radius: 5px;
+    transition: box-shadow .5s ease-in-out;
+}
+
+.button:hover{
+    box-shadow: 0 0 10px var(--destak);
+}   
+
+.titulo-elenco{
+    margin: 50px 0;
+}
+
+.container-card-elenco{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 6%;
+}
+
+.card-elenco{
+    width: 100%;
+    height: 40vh;
+    background-color: #2d2d2d;
+    margin-right: 50px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.img-elenco{
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/exemplo-foto-perfil.jpg);
+    background-size: cover;
+    border-radius: 200px;
+    margin: auto;
+    position: relative;
+    bottom: 20%;
+}
+.img-elenco2{
+    width: 150px;
+    height: 150px;
+    background-image: url("https://www.themoviedb.org/t/p/w300_and_h450_bestv2/cg3LW0xX6RKr8dmescxq1bepcb5.jpg");
+    background-size: cover;
+    border-radius: 200px;
+    margin: auto;
+    position: relative;
+    bottom: 20%;
+}
+.img-elenco3{
+    width: 150px;
+    height: 150px;
+    background-image: url("https://www.themoviedb.org/t/p/w300_and_h450_bestv2/egh1eOHuYgeoqdlLQgaXMl6cPOm.jpg");
+    background-size: cover;
+    border-radius: 200px;
+    margin: auto;
+    position: relative;
+    bottom: 20%;
+}
+.img-elenco4{
+    width: 150px;
+    height: 150px;
+    background-image: url("https://www.themoviedb.org/t/p/w300_and_h450_bestv2/szMi36EOoCuMYeYO9eYqRefEnKo.jpg");
+    background-size: cover;
+    border-radius: 200px;
+    margin: auto;
+    position: relative;
+    bottom: 20%;
+}
+
+.card-elenco p{
+    margin-bottom: 20px;
+}
+
+.box-ficha{
+    width: 20%;
+    height: auto;
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.titulo-ficha{
+    margin-bottom: 40px;
+}
+
+.lista-ficha{
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.box-text-ficha{
+    display: flex;
+    flex-direction: column;
+}
+
+.cor-cinza{
+    color: #636363;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .container-card-elenco{
+        flex-direction: column;
+    }
+
+    .buttons-container{
+        flex-direction: column;
+    }
+
+    .box-ficha{
+        width: 100%;
+        padding: 10px 0 0 10px;
+        margin-top: 50px;
+    }
+
+    .card-elenco{
+        margin-top: 30%;
+        margin-right: 0;
+        
+
+    }
+
+    .hero{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-hero{
+        text-align: center;
+        width: 80%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .img-hero{
+        width: 70%;
+    }
+
+    .box-elenco{
+        width: 100% ;
+    }
+
+    .button{
+        margin: 10px 0 10px 0;
+    }
+
+    .titulo-elenco{
+        margin: 20px 0;
+    }
+    .box-text-ficha{
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width: 601px) {
+    .img-hero{
+        width: 30%;
+    }
+
+    .text-hero{
+        width: 50%;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .box-elenco{
+        width: 100%;
+    }
+
+    .box-ficha{
+        width: 95%;
+        margin-top: 50px;
+    }
+
+    .card-elenco{
+        margin: 10px;
+    }
+
+    .box-text-ficha{
+        flex-direction: row;
+    }
+
+    .lista-ficha{
+        margin: 0 12px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .img-hero{
+        width: 20%;
+    }
+
+    .container{
+        flex-direction: row;
+    }
+
+    .box-text-ficha{
+        flex-direction: column;
+    }
+
+    .lista-ficha{
+        margin: 10px 0;
+    }
+
+    .titulo-ficha{
+        margin-bottom: 15px;
+    }
+
+    .box-elenco{
+        width: 80%;
+    }
+
+    .box-ficha{
+        width: 20%;
+        margin-left: 70px;
+    }
+
+    .subtitulo-hero{
+        width: 80%;
+    }
+
+    .img-hero{
+        width: 20%;
+    }
+
+}

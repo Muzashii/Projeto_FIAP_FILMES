@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+
+:root{
+    --bg-primary: #111;
+    --bg-secundary: #2d2d2d;
+    --default: #fff;
+    --destak: #f06;
+    --font-primary: 'Roboto', sans-serif;
+    --font-header: 'Bebas Neue', cursive;
+    --font-hero: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bg-primary);
+    color: var(--default);
+    font-family: var(--font-primary);
+    font-size: 1.6em;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: var(--bg-secundary);
+}
+
+header span{
+    color: var(--destak);
+    
+}
+
+header h1{
+    color: var(--destak);
+    font-family: var(--font-header) ;
+}
+
+h2{
+    border-left: var(--destak) solid 5px;
+    padding-left: .4em;
+    margin: 5px;
+}
+
+nav{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+
+nav ul{
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+}
+
+nav li{
+    list-style: none;
+    margin: 0 1em;
+}
+a{
+    color: var(--default);
+    text-decoration: none;
+}
+
+nav li:last-child{
+    flex-grow: 1;
+    text-align: end;
+}
